@@ -4,17 +4,19 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
-config.initial_cols = 96
-config.initial_rows = 32
+config.initial_cols = 110
+config.initial_rows = 36
 -- config.color_scheme = "Bearded Arc"
 -- config.color_scheme = "Lunaria Light (Gogh)"
 config.color_scheme = 'Monokai (base16)'
 config.font = wezterm.font("ComicShannsMono Nerd Font")
 config.font_size = 17
 
-config.enable_tab_bar = true
 config.window_decorations = "RESIZE"
+config.use_fancy_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = true
+config.tab_bar_at_bottom = true
 
 -- config.text_background_opacity = 0.2
 -- config.window_background_opacity = 0.5
@@ -39,5 +41,19 @@ wezterm.on("window-resized", function(window, pane)
   end
 end)
 
--- and finally, return the configuration to wezterm
+
+config.window_frame = {
+  font = wezterm.font { family = 'Roboto', weight = 'Medium' },
+  font_size = 11.0,inactive_titlebar_bg = "none",
+        active_titlebar_bg = "none",
+}
+
+config.colors = {
+  tab_bar = {
+    -- The color of the inactive tab bar edge/divider
+    inactive_tab_edge = '#739402',
+  },
+}
+
+
 return config
