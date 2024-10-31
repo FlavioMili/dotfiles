@@ -7,7 +7,6 @@ local config = wezterm.config_builder()
 config.initial_cols = 110
 config.initial_rows = 36
 -- config.color_scheme = "Bearded Arc"
--- config.color_scheme = "Lunaria Light (Gogh)"
 config.color_scheme = 'Monokai (base16)'
 config.font = wezterm.font("ComicShannsMono Nerd Font")
 config.font_size = 17
