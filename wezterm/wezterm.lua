@@ -22,7 +22,7 @@ config.show_new_tab_button_in_tab_bar = false
 config.macos_window_background_blur = 25
 config.window_background_opacity = 0.35
 config.window_padding = { bottom = 0 }
-
+config.max_fps = 120
 -- Key bindings
 local act = wezterm.action
 config.keys = {
