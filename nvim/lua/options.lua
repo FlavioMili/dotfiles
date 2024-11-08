@@ -6,4 +6,3 @@ vim.opt.relativenumber = true
 
 
 
-
