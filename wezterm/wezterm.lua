@@ -26,28 +26,17 @@ config.max_fps = 120
 -- Key bindings
 local act = wezterm.action
 config.keys = {
-	{ key = "t", mods = "CMD", action = act.SpawnTab("CurrentPaneDomain") },
-	{ key = "w", mods = "CMD|SHIFT", action = act.CloseCurrentTab({ confirm = true }) },
+  { key = "t", mods = "CMD", action = act.SpawnTab("CurrentPaneDomain") },
   { key = 'F', mods = 'CMD|SHIFT', action = wezterm.action.ToggleFullScreen },
-  { key = 'w', mods = 'CMD', action = wezterm.action.CloseCurrentPane { confirm = true }, },
-  {
-    key = '%',
-    mods = 'CTRL|SHIFT|ALT',
-    action = wezterm.action.SplitPane {
-      direction = 'Right',
-      command = { args = { 'top' } },
-      size = { Percent = 50 },
-    },
-  },
-{
-    key = '$',
-    mods = 'CTRL|SHIFT|ALT',
-    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
-  },
-   { key = 'k',     mods = "CMD", action = act.ActivatePaneDirection('Up') },
-   { key = 'j',     mods = "CMD", action = act.ActivatePaneDirection('Down') },
-   { key = 'h',     mods = "CMD", action = act.ActivatePaneDirection('Left') },
-   { key = 'l',     mods = "CMD", action = act.ActivatePaneDirection('Right') },
+  { key = 'w', mods = 'CMD', action = wezterm.action.CloseCurrentPane { confirm = true } },
+  { key = 'H', mods = 'CMD|SHIFT', action = wezterm.action.SplitPane { direction = 'Left' } },
+  { key = 'L', mods = 'CMD|SHIFT', action = wezterm.action.SplitPane { direction = 'Right' } },
+  { key = 'J', mods = 'CMD|SHIFT', action = wezterm.action.SplitPane { direction = 'Down' } },
+  { key = 'K', mods = 'CMD|SHIFT', action = wezterm.action.SplitPane { direction = 'Up' } },
+  { key = 'k', mods = "CMD", action = act.ActivatePaneDirection('Up') },
+  { key = 'j', mods = "CMD", action = act.ActivatePaneDirection('Down') },
+  { key = 'h', mods = "CMD", action = act.ActivatePaneDirection('Left') },
+  { key = 'l', mods = "CMD", action = act.ActivatePaneDirection('Right') },
 }
 wezterm.on("window-resized", function(window, pane)
   if window:get_dimensions().is_full_screen then
