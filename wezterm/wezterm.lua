@@ -37,6 +37,10 @@ config.keys = {
   { key = 'j', mods = "CMD", action = act.ActivatePaneDirection('Down') },
   { key = 'h', mods = "CMD", action = act.ActivatePaneDirection('Left') },
   { key = 'l', mods = "CMD", action = act.ActivatePaneDirection('Right') },
+  { key = 'H', mods = 'ALT|SHIFT', action = act.AdjustPaneSize { 'Left', 3 }, },
+  { key = 'J', mods = 'ALT|SHIFT', action = act.AdjustPaneSize { 'Down', 3 }, },
+  { key = 'K', mods = 'ALT|SHIFT', action = act.AdjustPaneSize { 'Up', 3 } },
+  { key = 'L', mods = 'ALT|SHIFT', action = act.AdjustPaneSize { 'Right', 3 }, },
 }
 wezterm.on("window-resized", function(window, pane)
   if window:get_dimensions().is_full_screen then
