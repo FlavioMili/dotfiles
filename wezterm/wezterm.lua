@@ -4,8 +4,8 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
-config.initial_cols = 140
-config.initial_rows = 42
+config.initial_cols = 144
+config.initial_rows = 43
 -- config.color_scheme = "Bearded Arc"
 config.color_scheme = 'Monokai (base16)'
 config.font = wezterm.font("ComicShannsMono Nerd Font")
@@ -22,7 +22,7 @@ config.show_new_tab_button_in_tab_bar = false
 config.macos_window_background_blur = 25
 config.window_background_opacity = 0.35
 config.window_padding = { bottom = 0 }
-config.max_fps = 120
+config.max_fps = 240
 -- Key bindings
 local act = wezterm.action
 config.keys = {

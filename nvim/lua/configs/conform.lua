@@ -6,6 +6,7 @@ local options = {
     c = { "clang-format" },
     cpp = { "clang-format" },
     python = { "black", "isort" },
+    vhdl = { "vsg" },
   },
 
   -- format_on_save = {
