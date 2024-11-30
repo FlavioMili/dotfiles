@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "oceanic-next",
+	theme = "chadracula",
   -- transparency = true,
 	hl_override = {
 		Comment = { italic = true },

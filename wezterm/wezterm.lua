@@ -5,7 +5,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.initial_cols = 144
-config.initial_rows = 43
+config.initial_rows = 44
 -- config.color_scheme = "Bearded Arc"
 config.color_scheme = 'Monokai (base16)'
 config.font = wezterm.font("ComicShannsMono Nerd Font")

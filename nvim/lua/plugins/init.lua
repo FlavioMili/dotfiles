@@ -8,5 +8,4 @@ return {
   require("plugins.lspconfig"),
   require("plugins.nvimtree"),
   require("plugins.treesitter"),
-  require("plugins.tinyinlinediagnostic"),
 }

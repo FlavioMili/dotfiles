@@ -37,5 +37,3 @@ vim.schedule(function()
 end)
 
 vim.cmd("language en_US")
-
-vim.diagnostic.config({ virtual_text = false })
