@@ -27,7 +27,7 @@ config.max_fps = 240
 local act = wezterm.action
 config.keys = {
   { key = "t", mods = "CMD", action = act.SpawnTab("CurrentPaneDomain") },
-  { key = 'F', mods = 'CMD|SHIFT', action = wezterm.action.ToggleFullScreen },
+  -- { key = 'F', mods = 'CMD|SHIFT', action = wezterm.action.ToggleFullScreen },
   { key = 'w', mods = 'CMD', action = wezterm.action.CloseCurrentPane { confirm = true } },
    -- Shortcuts without Window Manager
   -- { key = 'H', mods = 'CMD|SHIFT', action = wezterm.action.SplitPane { direction = 'Left' } },
