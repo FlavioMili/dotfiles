@@ -1,0 +1,202 @@
+[
+  {
+    "app" : 
+    {
+      "arguments" : [],
+      "author" : "Michele Bolognini",
+      "color" : 4286784812,
+      "command" : "/Users/flavio/Programming/Montezuma/build/montezuma",
+      "elo" : 0,
+      "gpu" : false,
+      "idName" : "Montezuma",
+      "initStrings" : [],
+      "name" : "Montezuma",
+      "protocol" : "uci",
+      "working folder" : "/Users/flavio/Programming/Montezuma/build"
+    },
+    "comment" : "",
+    "options" : 
+    [
+      {
+        "default" : 64,
+        "max" : 128,
+        "min" : 1,
+        "name" : "hashSize",
+        "type" : "spin",
+        "value" : 64
+      },
+      {
+        "default" : "",
+        "name" : "bookPath",
+        "type" : "string",
+        "value" : ""
+      },
+      {
+        "default" : 6,
+        "max" : 10,
+        "min" : 1,
+        "name" : "maxSearchDepth",
+        "type" : "spin",
+        "value" : 6
+      }
+    ]
+  },
+  {
+    "app" : 
+    {
+      "arguments" : [],
+      "author" : "the Stockfish developers (see AUTHORS file)",
+      "color" : 4286860931,
+      "command" : "/private/var/folders/23/bs0w8x7d179cbzx1s0pfctb40000gn/T/AppTranslocation/B2543016-4755-44C7-9651-A98DDD0F4752/d/banksiagui.app/Contents/MacOS/bsg-engines/stockfish15.1",
+      "elo" : 0,
+      "gpu" : false,
+      "idName" : "Stockfish 15.1",
+      "initStrings" : [],
+      "name" : "Stockfish 15.1",
+      "protocol" : "uci",
+      "working folder" : "/private/var/folders/23/bs0w8x7d179cbzx1s0pfctb40000gn/T/AppTranslocation/B2543016-4755-44C7-9651-A98DDD0F4752/d/banksiagui.app/Contents/MacOS/bsg-engines"
+    },
+    "comment" : "",
+    "options" : 
+    [
+      {
+        "default" : "",
+        "name" : "Debug Log File",
+        "type" : "string",
+        "value" : ""
+      },
+      {
+        "default" : 1,
+        "max" : 1024,
+        "min" : 1,
+        "name" : "Threads",
+        "type" : "spin",
+        "value" : 1
+      },
+      {
+        "default" : 16,
+        "max" : 33554432,
+        "min" : 1,
+        "name" : "Hash",
+        "type" : "spin",
+        "value" : 16
+      },
+      {
+        "name" : "Clear Hash",
+        "type" : "button"
+      },
+      {
+        "default" : false,
+        "name" : "Ponder",
+        "type" : "check",
+        "value" : false
+      },
+      {
+        "default" : 1,
+        "max" : 500,
+        "min" : 1,
+        "name" : "MultiPV",
+        "type" : "spin",
+        "value" : 1
+      },
+      {
+        "default" : 20,
+        "max" : 20,
+        "min" : 0,
+        "name" : "Skill Level",
+        "type" : "spin",
+        "value" : 20
+      },
+      {
+        "default" : 10,
+        "max" : 5000,
+        "min" : 0,
+        "name" : "Move Overhead",
+        "type" : "spin",
+        "value" : 10
+      },
+      {
+        "default" : 100,
+        "max" : 1000,
+        "min" : 10,
+        "name" : "Slow Mover",
+        "type" : "spin",
+        "value" : 100
+      },
+      {
+        "default" : 0,
+        "max" : 10000,
+        "min" : 0,
+        "name" : "nodestime",
+        "type" : "spin",
+        "value" : 0
+      },
+      {
+        "default" : false,
+        "name" : "UCI_Chess960",
+        "type" : "check",
+        "value" : false
+      },
+      {
+        "default" : false,
+        "name" : "UCI_LimitStrength",
+        "type" : "check",
+        "value" : false
+      },
+      {
+        "default" : 1350,
+        "max" : 2850,
+        "min" : 1350,
+        "name" : "UCI_Elo",
+        "type" : "spin",
+        "value" : 1350
+      },
+      {
+        "default" : false,
+        "name" : "UCI_ShowWDL",
+        "type" : "check",
+        "value" : false
+      },
+      {
+        "default" : "<empty>",
+        "name" : "SyzygyPath",
+        "type" : "string",
+        "value" : "<empty>"
+      },
+      {
+        "default" : 1,
+        "max" : 100,
+        "min" : 1,
+        "name" : "SyzygyProbeDepth",
+        "type" : "spin",
+        "value" : 1
+      },
+      {
+        "default" : true,
+        "name" : "Syzygy50MoveRule",
+        "type" : "check",
+        "value" : true
+      },
+      {
+        "default" : 7,
+        "max" : 7,
+        "min" : 0,
+        "name" : "SyzygyProbeLimit",
+        "type" : "spin",
+        "value" : 7
+      },
+      {
+        "default" : true,
+        "name" : "Use NNUE",
+        "type" : "check",
+        "value" : true
+      },
+      {
+        "default" : "nn-ad9b42354671.nnue",
+        "name" : "EvalFile",
+        "type" : "string",
+        "value" : "nn-ad9b42354671.nnue"
+      }
+    ]
+  }
+]

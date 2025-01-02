@@ -1,0 +1,28 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "serialNumber" : "47719F156DFB930A",
+          "category" : "mouse",
+          "productName" : "MX Master 3 Mac",
+          "vendorID" : "0x46d",
+          "productID" : "0xb023"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "zoom"
+            }
+          }
+        },
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    }
+  ]
+}
