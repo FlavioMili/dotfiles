@@ -2,25 +2,43 @@
   "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "if" : {
-        "device" : {
-          "serialNumber" : "47719F156DFB930A",
-          "category" : "mouse",
-          "productName" : "MX Master 3 Mac",
-          "vendorID" : "0x46d",
-          "productID" : "0xb023"
-        }
-      },
       "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
         "modifiers" : {
           "vertical" : {
             "option" : {
               "type" : "zoom"
             }
           }
-        },
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0xb023",
+          "productName" : "MX Master 3 Mac",
+          "vendorID" : "0x46d",
+          "serialNumber" : "47719F156DFB930A",
+          "category" : "mouse"
+        }
+      }
+    },
+    {
+      "scrolling" : {
         "reverse" : {
           "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0xc077",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "productName" : "USB Optical Mouse"
         }
       }
     }
