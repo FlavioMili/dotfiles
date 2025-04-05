@@ -1,5 +1,4 @@
 return {
-  require("plugins.supermaven"),
   require("plugins.dashboard"),
   require("plugins.hop"),
   require("plugins.peek"),
