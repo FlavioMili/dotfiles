@@ -46,4 +46,4 @@ lspconfig.vhdl_ls.setup({
   capabilities = capabilities
 })
 
-vim.cmd("language en_US")
+vim.cmd("language en_US.UTF-8")
