@@ -26,6 +26,7 @@ yabai -m mouse_drop_action swap
 
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^game$" manage=off
 
 # 37px padding for sketchybar
 yabai -m config external_bar main:37:0

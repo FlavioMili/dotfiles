@@ -9,7 +9,7 @@ config.initial_rows = 44
 -- config.color_scheme = "Bearded Arc"
 config.color_scheme = 'Monokai (base16)'
 config.font = wezterm.font("ComicShannsMono Nerd Font")
-config.font_size = 16
+config.font_size = 14
 config.window_decorations = "RESIZE"
 config.native_macos_fullscreen_mode = true
 
